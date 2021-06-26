@@ -27,7 +27,7 @@ header h1{
 .welcome{
     color: #fff;
     background-color: #feb614;
-    font-size: 30px;
+    font-size: 40px;
     position:absolute;
     top:50%;
     left:0;
@@ -52,7 +52,7 @@ nav ul{
 nav li{
     width: 25%;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
 }
 nav ul li a{
     text-decoration: none;
@@ -111,3 +111,58 @@ footer{
     padding: 10px;
     text-align: center;
 }
+/* pseudo classes */
+nav li a:hover{
+    text-decoration: underline;
+    
+}
+.images li:hover{
+    position: relative;
+    top:-10px;
+ }
+ form input:focus{
+     border: 2px solid green;
+     outline: none;
+ }
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+section.join p::after{
+    content: "....this is an injection using pseudo class after//wholllly";
+}
+/* media querries
+  */
+@media  screen and (max-width:1400px) {
+     .welcome h2{
+         font-size: 40px;
+     } 
+     nav li{
+        font-size:18px;
+     }
+  }
+  @media  screen and (max-width:960px) {
+    .welcome h2{
+        font-size: 40px;
+    } 
+ }
+ @media  screen and (max-width:700px) {
+    .welcome {
+        position: relative;
+    } 
+    .welcome br{
+        display: none;
+    }
+ }
+ @media  screen and (max-width:500px) {
+    .welcome h2{
+        position: relative;
+        font-size: 30px;
+    } 
+    .welcome br{
+        display: none;
+    }
+ }
