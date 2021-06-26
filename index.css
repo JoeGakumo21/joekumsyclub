@@ -1,0 +1,14 @@
+p{
+    color: slategray;
+    line-height: 40px;
+    column-count: 5;
+    background: #000;
+    border-radius: 12px;
+    font-size: 20px;
+    column-gap: 40px;
+}
+h3{
+    color: saddlebrown;
+    letter-spacing: 30px;
+    column-count: 3;
+}
