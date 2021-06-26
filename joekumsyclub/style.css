@@ -165,4 +165,14 @@ section.join p::after{
     .welcome br{
         display: none;
     }
+    .images li{
+     width: 100%;
+     display: block;
+     margin: 20px auto;
+    }
+    nav li{
+        display: block;
+        margin: 20px auto;
+    }
  }
+ 
